@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InduGrind Allenox | Ferramentas Artesanais de Alta Performance</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background-color: #0a0a0a;
+            background-image: radial-gradient(circle at top right, rgba(37, 99, 235, 0.1), transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(252, 211, 77, 0.1), transparent 50%);
+        }
+        .nav-link.active {
+            color: #facc15; /* yellow-400 */
+        }
+        /* Esconde todas as seções por padrão */
+        .page-section {
+            display: none;
+        }
+        /* Mostra a seção ativa */
+        .page-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="gradient-bg text-gray-200 antialiased">
+
+    <!-- Cabeçalho -->
+    <header class="py-6 border-b border-gray-800 sticky top-0 bg-gray-900/80 backdrop-blur-lg z-20">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-3" data-page="home">
+                <!-- Logotipo -->
+                <svg class="w-10 h-10 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm3.293 14.707l-1.06-.032a1 1 0 0 0-.883.52l-1.142 2.284a1 1 0 0 1-1.789-.894l1.142-2.284a1 1 0 0 0-.883-.52l-1.06.032a1 1 0 0 1-1.05-1.363l2.5-5a1 1 0 0 1 1.788 0l2.5 5a1 1 0 0 1-1.05 1.363zM12 12c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3z"/>
+                </svg>
+                <h1 class="text-2xl font-bold text-white tracking-tight">
+                    <span class="text-yellow-400">INDU</span>GRIND
+                </h1>
+            </a>
+            <!-- Navegação -->
+            <nav id="main-nav" class="hidden md:flex space-x-8 text-sm font-semibold">
+                <a href="#home" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors active" data-page="home">Home</a>
+                <a href="#produto" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors" data-page="produto">O Produto</a>
+                <a href="#estrategia" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors" data-page="estrategia">Estratégia</a>
+                <a href="#contato" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors" data-page="contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- PÁGINA HOME -->
+        <section id="home" class="page-section active">
+            <article class="max-w-4xl mx-auto">
+                <header class="mb-12 text-center">
+                    <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4">Da Garagem à Vanguarda Industrial: A Saga da <span class="text-yellow-400">InduGrind Allenox</span></h1>
+                    <p class="text-lg text-gray-400 max-w-3xl mx-auto">O que transforma uma empresa promissora em uma potência de mercado? Uma visão afiada, um produto excepcional e uma equipe que rema na mesma direção.</p>
+                </header>
+                <div class="mb-12 rounded-lg overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-105">
+                    <img src="https://storage.googleapis.com/gemini-prod/images/4c2f8218-a616-43b9-873b-486d36e090a2" alt="Logotipo da InduGrind Allenox em destaque" class="w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/1200x600/1a1a1a/ffffff?text=InduGrind+Allenox';">
+                </div>
+                <div class="prose prose-invert lg:prose-xl max-w-none text-gray-300 space-y-12">
+                    <p>No coração pulsante da indústria brasileira, onde a precisão encontra a robustez, uma nova força emerge. A <strong>InduGrind Allenox</strong>, desde 2020, não está apenas fabricando ferramentas; está forjando o futuro. Com uma missão clara de "construir o futuro da indústria brasileira com equipamentos de alta performance", a empresa se alicerça sobre três pilares inabaláveis: <strong>tecnologia, precisão e qualidade</strong>.</p>
+                    <h2 class="text-3xl font-bold text-white border-l-4 border-yellow-400 pl-4 mb-6">O Cérebro da Operação: Uma Visão que Molda o Aço</h2>
+                    <p>Toda grande jornada começa com uma visão. Na InduGrind, essa visão é personificada por seu fundador, <strong>Alexander</strong>, que não apenas define os objetivos estratégicos, mas supervisiona cada engrenagem desta complexa operação. A gestão da empresa funciona como um "cérebro", um núcleo de eficiência que centraliza e analisa dados de todas as áreas.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- PÁGINA O PRODUTO -->
+        <section id="produto" class="page-section">
+            <article class="max-w-4xl mx-auto">
+                <header class="mb-12 text-center">
+                    <h1 class="text-4xl md:text-5xl font-black text-white leading-tight mb-4">O Coração da Máquina: A <span class="text-yellow-400">Lixadeira de Cinta Industrial</span></h1>
+                </header>
+                <div class="prose prose-invert lg:prose-xl max-w-none text-gray-300 space-y-12">
+                    <p>No centro do universo InduGrind está seu produto estrela. Mais do que uma máquina, ela é a materialização da filosofia da empresa. Projetada para máxima eficiência e durabilidade, esta ferramenta é o resultado de uma engenharia meticulosa.</p>
+                    <div class="my-8 flex justify-center">
+                        <video controls muted loop poster="https://placehold.co/800x450/1a1a1a/facc15?text=Lixadeira+em+A%C3%A7%C3%A3o">
+                            <source src="https://storage.googleapis.com/gemini-prod/files/lixadeira_de_cinta.mp4" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                    </div>
+                    <ul class="list-disc list-inside space-y-4 mt-6">
+                        <li><strong>Design Robusto:</strong> Construída para resistir ao uso intenso dos ambientes industriais mais exigentes.</li>
+                        <li><strong>Motor Potente:</strong> Um coração de 4KW que garante potência constante, sem vacilar diante dos trabalhos mais pesados.</li>
+                        <li><strong>Controle Absoluto:</strong> Com velocidade ajustável de até 33m/s, oferece ao operador um controle preciso para acabamentos perfeitos nos mais diversos materiais.</li>
+                        <li><strong>Versatilidade Superior:</strong> Compatível com cintas de 150x2000mm, é a solução ideal para trabalhos em madeira, metal, plástico e muito mais.</li>
+                    </ul>
+                    <h2 class="text-3xl font-bold text-white border-l-4 border-yellow-400 pl-4 mb-6">A Sinfonia da Produção</h2>
+                    <p>Uma máquina excepcional só pode nascer de um processo impecável. O fluxo de produção da InduGrind é uma verdadeira sinfonia, onde cada membro da equipe desempenha seu papel com maestria.</p>
+                    <div class="my-8 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                         <img src="https://i.imgur.com/iYg3o4p.png" alt="Diagrama do processo de fabricação da lixadeira InduGrind" class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/800x300/1a1a1a/ffffff?text=Processo+de+Fabrica%C3%A7%C3%A3o';">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- PÁGINA ESTRATÉGIA -->
+        <section id="estrategia" class="page-section">
+            <article class="max-w-4xl mx-auto">
+                <header class="mb-12 text-center">
+                    <h1 class="text-4xl md:text-5xl font-black text-white leading-tight mb-4">O Poder do Nicho: A <span class="text-yellow-400">Estratégia</span> por Trás do Sucesso</h1>
+                </header>
+                <div class="prose prose-invert lg:prose-xl max-w-none text-gray-300 space-y-12">
+                     <div class="my-8 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+                        <img src="https://i.imgur.com/g6xP2uQ.png" alt="Gráfico de crescimento de vendas e ROI" class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/800x400/1a1a1a/ffffff?text=Crescimento+de+Vendas';">
+                    </div>
+                    <p>Em um mercado vasto, ser específico não é uma limitação, <strong>é um superpoder</strong>. A liderança da InduGrind provou que focar em cuteleiros, metalúrgicos e marceneiros profissionais era a decisão correta.</p>
+                    <blockquote class="border-l-4 border-yellow-400 pl-6 py-2 my-8 italic text-gray-400">
+                        "Trabalhar com um nicho específico, como o industrial, não é algo que nos 'prende'. Ao invés disso, nos dá foco."
+                    </blockquote>
+                    <p>Essa clareza estratégica é a maior vantagem da InduGrind. O mercado confirma a aposta: o setor de equipamentos artesanais movimentou <strong>R$ 51,5 bilhões em 2024</strong> e tem uma projeção de crescimento para <strong>R$ 108,9 bilhões até 2033</strong>.</p>
+                     <h2 class="text-3xl font-bold text-white border-l-4 border-yellow-400 pl-4 mb-6">Olhando para o Futuro</h2>
+                    <p>Com uma base sólida, a InduGrind Allenox olha para o horizonte com ambição. Os próximos passos são claros e ousados: Expansão da linha de produtos, implementação de sistemas de automação alinhados à Indústria 4.0, desenvolvimento de soluções sustentáveis e a conquista do mercado nacional e internacional.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- PÁGINA CONTATO -->
+        <section id="contato" class="page-section">
+            <article class="max-w-4xl mx-auto">
+                <header class="mb-12 text-center">
+                    <h1 class="text-4xl md:text-5xl font-black text-white leading-tight mb-4">Fale Conosco</h1>
+                    <p class="text-lg text-gray-400 max-w-3xl mx-auto">Tem alguma dúvida ou quer um orçamento? Preencha o formulário abaixo.</p>
+                </header>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-semibold mb-2 text-gray-400">Nome</label>
+                        <input type="text" id="name" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-semibold mb-2 text-gray-400">Email</label>
+                        <input type="email" id="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-semibold mb-2 text-gray-400">Mensagem</label>
+                        <textarea id="message" rows="5" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-500 transition-colors">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 InduGrind Allenox. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Construindo o futuro da indústria brasileira.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link, a[data-page]');
+            const sections = document.querySelectorAll('.page-section');
+            const mainNav = document.getElementById('main-nav');
+
+            function showPage(pageId) {
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                const activeSection = document.getElementById(pageId);
+                if (activeSection) {
+                    activeSection.classList.add('active');
+                }
+
+                // Atualiza a classe 'active' nos links de navegação
+                const navLinksInNav = mainNav.querySelectorAll('.nav-link');
+                navLinksInNav.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-page') === pageId) {
+                        link.classList.add('active');
+                    }
+                });
+                window.scrollTo(0, 0); // Rola para o topo da página
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const pageId = this.getAttribute('data-page');
+                    showPage(pageId);
+                    // Atualiza a URL sem recarregar a página
+                    history.pushState(null, '', `#${pageId}`);
+                });
+            });
+
+            // Mostra a página correta com base na URL ao carregar
+            const initialPage = window.location.hash.substring(1) || 'home';
+            showPage(initialPage);
+        });
+    </script>
+</body>
+</html>
